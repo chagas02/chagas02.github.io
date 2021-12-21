@@ -207,6 +207,10 @@ input, select, textarea {
 	h3 {
 		font-size: 1.35em;
 	}
+	h3.logica {
+		text-align: center;
+		font-size: 4em;
+	}
 
 	h4 {
 		font-size: 1.1em;
