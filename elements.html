@@ -25,7 +25,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="landing.html">Currículo</a></li>
 							<li><a href="elements.html">Portifólio</a></li>
-							
+
 						</ul>
 					</nav>
 
@@ -55,58 +55,62 @@
 								<section >
 									<h3 class="logica">Exercícios de Lógica</h3>
 										<div class="row">
-													<div class="col-4">
-														<p>1.Construir um algoritmo que leia 2 números e efetue a adição.
-																	Caso o valor somado seja maior que 20, este deverá ser apresentado
-																 	somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20,
-																	este deverá ser apresentado subtraindo-se 5.</p>
-														<p>2.Entrar com nome, sexo e idade de uma pessoa. Se a pessoa for do
-																	sexo feminino e tiver menos que 25 anos, imprimir nome e a
-																	mensagem: ACEITA. Caso contrário, imprimir nome e a mensagem: NÃO ACEITA.</p>
-														<p>3.Entrar com um número e informar se ele é divisível por 10,
-																		 por 5, por 2 ou se não é divisível por nenhum destes.</p>
-														<p>4.Entrar com 3 números e imprimi-los em ordem decrescente(suponha
-																números diferentes).</p>
-														<p>5.Ler 3 números, os possíveis lados de um triângulo, e imprimir a
-																classificação de acordo com tamanho dos lados.</p>
-														<p>6.Ler um número inteiro entre 1 e 12 e escrever o mês correspondente.
-																Caso o número seja fora desse intervalo, informar que não existe mês com este número.</p>
-														<p>7.A biblioteca de uma universidade deseja fazer um algoritmo que leia o nome do livro
-															 que será emprestado, o tipo de usuário (professor ou aluno) e possa imprimir um
-															 recibo conforme mostrado a seguir. Considerar que o professor tem 10 dias para
-															 devolver o livro e o aluno somente 3 dias.</p>
+													<div class="">
+															<h1>Programa Tabuada</h1>
+															<p>Tabuada de:<input type="text" name="" value="" id="inNum"></p>
+															<p>Até:<input type="text" name="" value="" id="inAte"></p>
+															<input type="button" name="" value="Mostrar resultado" id="btnRes">
+															<pre id="outResultado"></pre>
 													</div>
-													<div id="portifolio" class="col-4">
-														<p>8.Criar um algoritmo que leia um número e imprima todos os números de 1 até ele e o seu produto.</p>
-														<p>9.Entrar com o número de vezes que se deseja imprimir a palavra SOL e imprimir.</p>
-														<p>10.Entrar com 10 números e imprimir a soma dos positivos e o total de números negativos.</p>
-														<p>11.Criar um algoritmo que imprima a tabuada de um número.</p>
-														<p>12. Criar um algoritmo que entre com uma palavra e imprima conforme o exemplo:
-													       Palavra: sonho.
-													       SONHO
-													       SONHO SONHO
-													       SONHO SONHO SONHO
-													       SONHO SONHO SONHO SONHO</p>
-														<p>13.Ler vários números e informar quantos números entre 100 e 200 foram digitados.
-															 Se o valor 0 for lido encerrar a execução.</p>
-														<p>14.Chico tem 1,50 m e cresce 2 centímetros por ano, enquanto Juca tem 1,10 m e
-																cresce 3 centímetros por ano. Construir um algoritmo que calcule e imprima
-																quantos anos serão necessários para que Juca seja maior que Chico.</p>
-														<p>15.Na usina de Angra de Reis, os técnicos analisam a perda de massa de um
-																material radioativo. Sabendo-se que este perde 25% de sua massa a
-																cada 30 segundos, criar um algoritmo que imprima o tempo necessário
-																para que a massa desse material seja menor que 0.10.</p>
+													<div class="">
+															<h1>Descubra o número</h1>
+															<p>Numero:
+																	<input type="text" name="" value="" id="inNumero">
+																	<input type="button" name="" value="Apostar" id="btnApostar">
+																	<input type="button" name="" value="Jogar Novamente" id="btnJogar" class="oculta">
+															</p>
+
+															<h3>Erros:<span id="outErros"></span></h3>
+															<h3>Chances:<span id="outChances"></span></h3>
+
+															<h3 id="outDica" class="italico">Dica é um número entre 1 e 100.</h3>
 													</div>
-													<div id="exercicios"class="col-4">
-														<p>16.Armazenar 15 números inteiros em um vetor e imprimir
-																uma mensagem contendo o número e uma das mensagens: par ou ímpar.</p>
-														<p>17.Criar um vetor com 10 elementos inteiros. Imprimir o maior e o menor,
-															 sem ordenar, o percentual de números pares e a média dos elementos do vetor.</p>
-														<p>18.Criar 2 vetores com 10 números inteiros cada. Gerar e imprimir um vetor
-																dos números não comuns aos e vetores.</p>
-														<p>19.Criar um algoritmo com uma matriz 5x5 e escreva os elementos da diagonal principal</p>
-														<p>20.Criar um algoritmo com uma matriz 5x5 e imprima: toda a matriz, a matriz
-															gerada com números ímpares e outra só com números pares.</p>
+													<div class="">
+															<h1>Calcular</h1>
+															<p>Número Par Calcula o dobro </p>
+															<p>Número Impar Calcula o tiplo </p>
+															<p>Digite 0 para SAIR </p>
+															<input type="Button" name="" value="calcular" id="btnMultiplicar">
+													</div>
+													<div class="">
+														<h1>Consultório Odontológico</h1>
+														<p>Paciente:
+																<input type="text" name="" value="" id="inPaciente" autofocus placeholder="Digite o nome do Paciente">
+																<input type="button" name="" value="Adicionar" id="btAdicionar">
+																<input type="button" name="" value="Urgência" id="btUrgencia">
+																<input type="button" name="" value="Atender" id="btAtender">
+														</p>
+														<h3>Em atendimento:
+																	<span  id="outAtendimento" class="fonteAzul"></span>
+														</h3>
+														<pre id="outEspera"></pre>
+													</div>
+													<div class="">
+														<h1>Programa conta do Mês</h1>
+												    <p>Descrição da Conta: <input type="text" name="" value="" id="inConta"></p>
+												    <p>Valor a pagar R$: <input type="text" name="" value="" id="inValor"></p>
+												    <input type="button" name="" value="Registrar Conta" id="btnRegistrar">
+												    <pre id="outContas"></pre>
+												    <pre id="outValor"></pre>
+													</div>
+													<div class="">
+														<h1>Nome do Crachá</h1>
+												    <p>Nome do participante: <input type="text" name="" value="" id="inName"> </p>
+												    <input type="button" name="" value="Gerar crácha" id="btCracha">
+												    <input type="button" name="" value="Gerar email" id="btEmail">
+
+												    <pre id="outRes"></pre>
+												    <pre id="outEmail"></pre>
 
 													</div>
 										</div>
@@ -141,21 +145,21 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">francisco_publicidade@yahoo.com.br</a>
+										<a href="#"></a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-phone"></span>
 										<h3>Telefone</h3>
-										<span>(85) 9 8770.2126</span>
+										<span></span>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-home"></span>
 										<h3>Endereço</h3>
-										<span>Genibaú<br />
+										<span>
 										Fortaleza-CE<br />
 										Brasil</span>
 									</div>
@@ -171,7 +175,10 @@
 								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li>
+										<a href="https://github.com/chagas02" class="icon brands alt fa-github" target="_blank">
+										<span class="label">GitHub</span></a>
+								</li>
 								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="copyright">
@@ -191,6 +198,13 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/exercise.js"></script>
+			<script src="assets/js/tabuada.js"></script>
+			<script src="assets/js/DescubraNumero.js"></script>
+			<script src="assets/js/breakContinue.js"></script>
+			<script src="assets/js/consultorioOdontologico.js"></script>
+			<script src="assets/js/contadoresAcumuladores.js"></script>
+			<script src="assets/js/nomeCracha.js"></script>
+
 
 	</body>
 </html>
